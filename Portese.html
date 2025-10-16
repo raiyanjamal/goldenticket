@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pizza Portese — Outdoor Poster Menu (A2)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brick:#8b1717; --gold:#f4b238; --cream:#fff7ee; --dark:#2b241f; --accent-green:#2f7a3f;
+    }
+    html,body{
+      margin:0; padding:24px; background:var(--cream); color:var(--dark); font-family:'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto;
+      display:flex; justify-content:center; align-items:flex-start; min-height:100vh; overflow:auto;
+    }
+    .poster{width:660px; background:linear-gradient(180deg,#fff 0%, #fffaf4 100%); border-radius:10px; box-shadow:0 20px 40px rgba(0,0,0,0.12); border:6px solid var(--brick); margin-bottom:24px;}
+    .hero{display:flex; gap:18px; align-items:flex-start; padding:22px 28px; background:linear-gradient(90deg,var(--brick), #b83b3b); color:var(--cream)}
+    .brand-text{flex:1}
+    .title{font-family:'Montserrat',sans-serif; font-weight:800; font-size:46px; line-height:0.9; letter-spacing:1px}
+    .tagline{margin-top:6px; font-size:14px; opacity:0.95}
+    .contact{min-width:220px; text-align:right}
+    .phone{font-weight:800; font-size:20px}
+    .order-cta{margin-top:6px; display:inline-block; background:var(--gold); color:var(--brick); padding:8px 10px; border-radius:8px; font-weight:700; text-decoration:none}
+    .icons{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .pill{background:#f3f3f3; padding:6px 10px; border-radius:999px; font-weight:700; font-size:12px; text-align:center;}
+    .hero-image{height:120px; background:linear-gradient(135deg, rgba(0,0,0,0.18), rgba(0,0,0,0.02)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400"><rect width="100%" height="100%" fill="%23ffdcb3"/></svg>') center/cover no-repeat; opacity:0.95}
+    .grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:18px 20px}
+    .card{background:rgba(255,255,255,0.95); border-radius:8px; padding:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .card h3{margin:0 0 6px 0; color:var(--brick); font-family:'Montserrat',sans-serif; font-size:18px}
+    .subtitle{font-size:12px; color:#6d5b4f; margin-bottom:8px}
+    .item{display:flex; align-items:flex-start; gap:8px; padding:6px 4px; border-bottom:1px dashed #eee}
+    .item:last-child{border-bottom:0}
+    .item-left{flex:1}
+    .name{font-weight:800; font-size:15px}
+    .ingredients{font-size:12px; color:#6d5b4f; margin-top:4px}
+    .ingredients .en{display:block; color:#3b2e26; opacity:0.85}
+    .price-bubble{min-width:64px; text-align:center; background:var(--gold); color:var(--brick); font-weight:800; border-radius:12px; padding:8px; font-size:14px}
+    .footer{padding:14px 20px; background:linear-gradient(90deg,#fffaf4,#fff3ea); display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .promo{font-weight:800; color:var(--brick)}
+    .qr-box{width:110px; height:110px; border-radius:8px; background:linear-gradient(180deg,#fff,#f2efe8); display:flex; align-items:center; justify-content:center; border:2px dashed #e6d5c2}
+    .qr-placeholder{font-size:12px; color:#6b5b4f; text-align:center}
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="hero">
+      <div class="brand-text">
+        <div class="title">Pizza Portese</div>
+        <div class="tagline">Tradizione & Gusto Italiano — Traditional Italian Taste</div>
+        <div class="icons">
+          <div class="pill">🍕 Venduta al etto / Sold by weight</div>
+          <div class="pill">🍅 Base Rossa / Red Base</div>
+          <div class="pill">🧀 Base Bianca / White Base</div>
+          <div class="pill">🌶️ Piccante / Spicy</div>
+          <div class="pill">🌱 Vegetariana / Vegetarian</div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="phone">Tel. 06.58.130.83</div>
+        <a class="order-cta" href="tel:+39065813083">Chiamare / Call to Order</a>
+      </div>
+    </div><div class="hero-image"></div>
+
+<div class="grid">
+  <div class="card">
+    <h3>🍅 Pizze Rustica — Base Rossa</h3>
+    <div class="subtitle">Pomodoro Base — Tomato Base (Venduta al etto / Sold by weight)</div>
+    <div class="item"><div class="item-left"><div class="name">Margherita</div><div class="ingredients">Pomodoro, Mozzarella, Basilico<span class="en">Tomato, Mozzarella, Basil</span></div></div><div class="price-bubble">€4,50</div></div>
+    <div class="item"><div class="item-left"><div class="name">Napoli</div><div class="ingredients">Pomodoro, Mozzarella, Acciughe, Olive<span class="en">Tomato, Mozzarella, Anchovies, Olives</span></div></div><div class="price-bubble">€5,00</div></div>
+    <div class="item"><div class="item-left"><div class="name">Diavola 🌶️</div><div class="ingredients">Salame Piccante, Peperoncino<span class="en">Spicy Salami, Chili Pepper</span></div></div><div class="price-bubble">€6,00</div></div>
+    <div class="item"><div class="item-left"><div class="name">Capricciosa</div><div class="ingredients">Prosciutto, Funghi, Carciofi, Olive<span class="en">Ham, Mushrooms, Artichokes, Olives</span></div></div><div class="price-bubble">€6,50</div></div>
+    <div class="item"><div class="item-left"><div class="name">Bufalina</div><div class="ingredients">Pomodoro, Mozzarella di Bufala, Basilico<span class="en">Tomato, Buffalo Mozzarella, Basil</span></div></div><div class="price-bubble">€7,00</div></div>
+    <div class="item"><div class="item-left"><div class="name">Vegetariana 🌱</div><div class="ingredients">Pomodoro, Verdure Grigliate<span class="en">Tomato, Grilled Vegetables</span></div></div><div class="price-bubble">€6,00</div></div>
+  </div>
+
+  <div class="card">
+    <h3>🧀 Pizze Rustica — Base Bianca</h3>
+    <div class="subtitle">Bianco Base — White Base (Venduta al etto / Sold by weight)</div>
+    <div class="item"><div class="item-left"><div class="name">4 Formaggi</div><div class="ingredients">Mozzarella, Gorgonzola, Fontina, Parmigiano<span class="en">Mozzarella, Gorgonzola, Fontina, Parmesan</span></div></div><div class="price-bubble">€6,50</div></div>
+    <div class="item"><div class="item-left"><div class="name">Patate e Rosmarino</div><div class="ingredients">Patate, Rosmarino, Mozzarella<span class="en">Potatoes, Rosemary, Mozzarella</span></div></div><div class="price-bubble">€5,50</div></div>
+    <div class="item"><div class="item-left"><div class="name">Zucchine e Scamorza</div><div class="ingredients">Zucchine, Scamorza Affumicata<span class="en">Zucchini, Smoked Scamorza</span></div></div><div class="price-bubble">€6,00</div></div>
+    <div class="item"><div class="item-left"><div class="name">Funghi e Prosciutto</div><div class="ingredients">Mozzarella, Funghi, Prosciutto<span class="en">Mozzarella, Mushrooms, Ham</span></div></div><div class="price-bubble">€6,50</div></div>
+  </div>
+
+  <div class="card">
+    <h3>🍕 Pizze Tonde — (dalle 18:30)</h3>
+    <div class="subtitle">Round pizzas — Perfect for sharing</div>
+    <div class="item"><div class="item-left"><div class="name">Margherita Tonda</div><div class="ingredients">Pomodoro, Mozzarella, Basilico<span class="en">Tomato, Mozzarella, Basil</span></div></div><div class="price-bubble">€5,00</div></div>
+    <div class="item"><div class="item-left"><div class="name">Prosciutto e Funghi</div><div class="ingredients">Pomodoro, Mozzarella, Prosciutto, Funghi<span class="en">Tomato, Mozzarella, Ham, Mushrooms</span></div></div><div class="price-bubble">€6,50</div></div>
+    <div class="item"><div class="item-left"><div class="name">Diavola 🌶️</div><div class="ingredients">Pomodoro, Mozzarella, Salame Piccante<span class="en">Tomato, Mozzarella, Spicy Salami</span></div></div><div class="price-bubble">€6,50</div></div>
+    <div class="item"><div class="item-left"><div class="name">Bufalina</div><div class="ingredients">Pomodoro, Mozzarella di Bufala, Basilico<span class="en">Tomato, Buffalo Mozzarella, Basil</span></div></div><div class="price-bubble">€7,00</div></div>
+  </div>
+
+  <div class="card">
+    <h3>🧊 Pizze Fredde & Fritti</h3>
+    <div class="subtitle">Cold pizzas & Fried snacks (Venduta al etto / Sold by weight)</div>
+    <div class="item"><div class="item-left"><div class="name">Supplì</div><div class="ingredients">Riso, Pomodoro, Mozzarella<span class="en">Rice, Tomato, Mozzarella</span></div></div><div class="price-bubble">€1,30</div></div>
+    <div class="item"><div class="item-left"><div class="name">Arancino</div><div class="ingredients">Riso, Ragù, Piselli, Mozzarella<span class="en">Rice, Meat Sauce, Peas, Mozzarella</span></div></div><div class="price-bubble">€1,50</div></div>
+    <div class="item"><div class="item-left"><div class="name">Filetto di Baccalà</div><div class="ingredients">Merluzzo Fritto<span class="en">Fried Cod Fillet</span></div></div><div class="price-bubble">€2,50</div></div>
+    <div class="item"><div class="item-left"><div class="name">Patatine Fritte</div><div class="ingredients">Patate Fritte<span class="en">French Fries</span></div></div><div class="price-bubble">€2,50</div></div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="promo">🔥 Offerte: 2 Pizze Rustica + Bibita €5,00</div>
+  <div style="display:flex; gap:12px; align-items:center;">
+    <div style="font-size:13px; color:#6b5b4f">Per ogni ingrediente aggiunto €0,50<br>For each extra ingredient €0.50</div>
+    <div class="qr-box"><div class="qr-placeholder">QR<div style="font-size:10px; opacity:0.8">(replace with real QR)</div></div></div>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>
